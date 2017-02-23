@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+    android:padding="3dp"
+        android:focusable="true"
+    android:weightSum="1"
+
+    >
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_artwork"
+            android:src="@drawable/music_placeholder"
+
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@+id/iv_play_active"
+            />
+        <ImageView
+            android:id="@+id/iv_play_active"
+            android:src="@drawable/ic_play_circle_outline_white"
+
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_gravity="top|right"
+
+            android:layout_width="40dp"
+            android:layout_height="30dp" />
+
+
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="140dp"
+        android:layout_height="60dp">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="Titre de la chanson"
+        android:textStyle="bold"
+        android:textSize="10sp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/iv_play_active"
+        android:layout_toStartOf="@+id/iv_play_active"
+        android:layout_weight="0.09"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:textColor="@color/material_drawer_primary_text" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:textSize="10sp"
+            android:text="Artiste"
+            android:layout_toRightOf="@id/iv_artwork"
+            android:layout_toEndOf="@id/iv_artwork"
+            android:layout_below="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textColor="@color/material_drawer_primary_text" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:text="3:05"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:textColor="@color/material_drawer_primary_text" />
+
+</FrameLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
